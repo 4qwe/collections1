@@ -3,18 +3,18 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        // Beispielprojekt, dass ArrayList in irgendeiner sinnvollen Weise verwendet
+        // Beispielprojekt, dass HashMap in irgendeiner sinnvollen Weise verwendet
 
-        MapContainer containero = new MapContainer(); /*das Objekt unserer Klasse heißt hardcoded "containero" -
-        Variablen-Namen in main können als hardcoded betrachtet werden (?), weil main wird niemals instantiiert werden*/
+        MapContainer containero = new MapContainer();
 
         containero.promptWieviele();
 
         containero.hashmapio = containero.makeMap();
-
-        System.out.printf("Und zum Beispiel für den Key '15': '%s'\n", containero.hashmapio.get(15));
-
+        for (int i = 0; i < 16; i++) {
+            System.out.printf("Element Nr. %2d: %s\n", (i + 1), (containero.hashmapio.get(i)));
+        }
         System.out.println("ENDE");
+
 
     }
 

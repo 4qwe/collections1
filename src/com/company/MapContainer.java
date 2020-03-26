@@ -12,7 +12,8 @@ public class MapContainer {
     }
 
     public HashMap makeMap() {
-        HashMap hashi = new HashMap(); //HashMap() default construktor macht eine mit 16 Elementen (Kapazität=16)
+        HashMap<Integer, String> hashi = new HashMap<>(); //eckige Klammern beim Konstruktor können leer bleiben, weil
+        // erwartete Typen bei der Deklaration links festgelegt wurden
 
         for (int i = 0; i < 16; i++) {
             hashi.put(i, "Wert ist dieser hier String");
