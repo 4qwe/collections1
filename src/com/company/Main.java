@@ -1,18 +1,24 @@
 package com.company;
 
+import java.util.Iterator;
+
 public class Main {
 
     public static void main(String[] args) {
-        // Beispielprojekt, dass HashMap in irgendeiner sinnvollen Weise verwendet
+        // Beispielprojekt, dass HashSet in irgendeiner sinnvollen Weise verwendet
 
-        MapContainer containero = new MapContainer();
+        SetContainer containero = new SetContainer();
 
-        containero.promptWieviele();
+        containero.hashsetio = containero.makeSet();
 
-        containero.hashmapio = containero.makeMap();
-        for (int i = 0; i < 16; i++) {
-            System.out.printf("Element Nr. %2d: %s\n", (i + 1), (containero.hashmapio.get(i)));
+        System.out.println(containero.hashsetio.size());
+
+        Iterator<Integer> iterator = containero.hashsetio.iterator();
+        while (iterator.hasNext()) {
+            int i = iterator.next();
+            System.out.printf("Element hat gespeicherten Wert: %3d\n", i);
         }
+
         System.out.println("ENDE");
 
 
