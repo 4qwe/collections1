@@ -13,7 +13,8 @@ public class Main {
 
         System.out.println(containero.hashsetioColl.size());
 
-        Iterator iter = containero.hashsetioColl.iterator();
+        Iterator iter = containero.hashsetioColl.iterator(); /*Iterator anstelle Iterable -> Iterator provided 3 Kontroll-
+        loops für das Set, das macht Sinn. Iterable verstehe ich nicht*/
         while (iter.hasNext()) {
             int i = (int) iter.next(); /*nur in der Methode die das ursprüngliche HashSet erstellt wird
             generic verwendet. Collection und Iterator sind nicht generic*/
