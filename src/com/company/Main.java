@@ -9,13 +9,14 @@ public class Main {
 
         SetContainer containero = new SetContainer();
 
-        containero.hashsetio = containero.makeSet();
+        containero.hashsetioColl = containero.makeSet(); //ab hier haben wir die Collection hashsetio
 
-        System.out.println(containero.hashsetio.size());
+        System.out.println(containero.hashsetioColl.size());
 
-        Iterator<Integer> iterator = containero.hashsetio.iterator();
-        while (iterator.hasNext()) {
-            int i = iterator.next();
+        Iterator iter = containero.hashsetioColl.iterator();
+        while (iter.hasNext()) {
+            int i = (int) iter.next(); /*nur in der Methode die das ursprüngliche HashSet erstellt wird
+            generic verwendet. Collection und Iterator sind nicht generic*/
             System.out.printf("Element hat gespeicherten Wert: %3d\n", i);
         }
 
