@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class ListContainer {
 
     public int anzahl_elemente = -1;
-    public ArrayList<String> listerio = null;
+    ArrayList<String> listerio = null; //package-private, nur so
 
     public int promptWieviele() {
         Scanner scanObj = new Scanner(System.in);
@@ -23,4 +23,7 @@ public class ListContainer {
         return lisi;
     }
 
+    public void set_this_listerio(ArrayList<String> listi) {
+        listi = this.listerio;
+    }
 }

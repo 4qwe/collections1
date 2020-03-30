@@ -11,7 +11,8 @@ public class Main {
 
         System.out.printf("Wir bauen also eine ArrayList mit %d Elementen%n", containero.anzahl_elemente);
 
-        containero.listerio = containero.createAL(containero.anzahl_elemente);
+        containero.set_this_listerio(containero.createAL(containero.anzahl_elemente)); //set_this methode um "this." zu probieren
+
         System.out.printf("Unser Array hat somit %s Stellen\n", containero.listerio.size());
         System.out.printf("Und zum Beispiel an 1. Stelle: '%s'\n", containero.listerio.get(0));
 
