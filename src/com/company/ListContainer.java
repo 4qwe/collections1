@@ -24,6 +24,6 @@ public class ListContainer {
     }
 
     public void set_this_listerio(ArrayList<String> listi) {
-        listi = this.listerio;
+        this.listerio = listi;
     }
 }
