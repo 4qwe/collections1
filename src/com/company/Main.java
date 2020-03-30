@@ -15,6 +15,10 @@ public class Main {
         System.out.printf("Unser Array hat somit %s Stellen\n", containero.listerio.size());
         System.out.printf("Und zum Beispiel an 1. Stelle: '%s'\n", containero.listerio.get(0));
 
+        for (String stringis : containero.listerio) { //generics for loop
+            System.out.println(stringis);
+        }
+
         System.out.println("ENDE");
     }
 
