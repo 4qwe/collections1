@@ -1,22 +1,13 @@
 package com.company;
 
+import java.util.Collection;
+
 public class Main {
 
     public static void main(String[] args) {
-        // Beispielprojekt dass ArrayList in irgendeiner sinnvollen Weise verwendet
+        // Beispielprojekt dass eine static ArrayList erstellt, "this." nutzt und generic methods oder classes nutzt
 
-        ListContainer containero = new ListContainer(); //das Objekt unserer Klasse heißt hardcoded "containero"
-
-        containero.anzahl_elemente = containero.promptWieviele(); // erst die Variable im Objekt erstellen, sie wird dann mehrfach benutzt
-
-        System.out.printf("Wir bauen also eine ArrayList mit %d Elementen%n", containero.anzahl_elemente);
-
-        containero.set_this_listerio(containero.createAL(containero.anzahl_elemente)); //set_this methode um "this." zu probieren
-
-        System.out.printf("Unser Array hat somit %s Stellen\n", containero.listerio.size());
-        System.out.printf("Und zum Beispiel an 1. Stelle: '%s'\n", containero.listerio.get(0));
-
-        for (String stringis : containero.listerio) { //generics for loop
+        for (Object stringis : ListContainer.stringArray) { //generics for loop
             System.out.println(stringis);
         }
 

@@ -3,7 +3,7 @@ package com.company;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class ListContainer {
+public class AnotherList {
 
     static ArrayList stringArray = ListContainer.createAL(promptWieviele());
 
